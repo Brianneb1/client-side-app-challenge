@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <title>Area Calculator</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <main>
+        <h1>Rectangle Area Calculator</h1>
+
+        <p>Enter base:
+            <input id="base" type="number" value="0">
+        </p>
+
+        <p>Enter height:
+            <input id="height" type="number" value="0">
+        </p>
+
+        <button id="submit" class="btn btn-[rimary">Calculate</button>
+
+        <p id="answer"></p>
+
+    </main>
+
+    <script>
+        console.log('Script starting')
+
+        console.log('Declare testable functions')
+
+        function area(x,y){
+            return x*y
+        }
+
+        console.log('Defined area=' + area)
+
+        console.log('Declare event listeners')
+
+        document.getElementById('submit').addEventListener('click', function () {
+            const base = parseInt(document.getElementById('base').value)
+            const radius = parseInt(document.getElementById('height').value)
+            console.log('base=' + base)
+            console.log('height=' + height)
+            const answer = 'The area of the rectangle is ' + area(base, radius)
+            document.getElementById('answer').innerHTML = answer
+        })
+
+        console.log('Script end')
+    </script>
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+
+</body>
+
+
+</html>
